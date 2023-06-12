@@ -1,0 +1,43 @@
+﻿@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+<div class="container">
+    <br /><br />
+    <button class="btn btn-warning" id="btn1">Buton1</button>
+    <button class="btn btn-primary" id="btn2">Buton2</button>
+    <button class="btn btn-info" id="btn3">Buton3</button>
+    <button class="btn btn-success" id="btn4">Buton4</button>
+    <button class="btn btn-danger" id="btn5">Buton5</button>
+    <button class="btn btn-dark" id="btn6">Buton6</button>
+</div>
+<script>
+    $("#btn1").click(function () {
+        alert('Merhaba burası bir mesaj kutusudur');
+    })
+
+    $("#btn2").click(function(){
+        swal('2 numaralı swal');
+    })
+
+    $("#btn3").click(function () {
+        swal('3 numaralı swal','3 numaralı swal içeriği');
+    })
+
+    $("#btn4").click(function () {
+        swal('4 numaralı swal', '4 numaralı swal içeriği',"success");
+    })
+
+    $("#btn5").click(function () {
+        swal('5 numaralı swal', '5 numaralı swal içeriği');
+    })
+
+    $("#btn6").click(function () {
+        swal('6 numaralı swal', '6 numaralı swal içeriği');
+    })
+</script>
